@@ -5,7 +5,9 @@ using DG.Tweening;
 
 public class DashScript : MonoBehavior 
 {
-	private void Dash(float x, float y)
+	#region DASH With Coroutine and Drag tweening
+
+    private void Dash(float x, float y)
     {
         isDashing = true;
 
@@ -47,4 +49,6 @@ public class DashScript : MonoBehavior
             hasDashed = false;
         }
     }
+
+    #endregion
 }
